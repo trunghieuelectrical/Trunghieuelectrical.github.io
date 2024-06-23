@@ -47,11 +47,11 @@ header {
     width: 100px; /* Tuỳ chỉnh kích thước ảnh công ty */
     border-radius: 50%; /* Làm tròn ảnh */
 }
+
 nav {
-    background-color: # 008B00;
+    background-color: #333;
     color: white;
-    padding: 0.3em 0;
-    font-size: 0.8em; /* Kích thước font của navbar */
+    padding: 0.5em 0;
 }
 
 nav ul {
@@ -73,7 +73,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #97FFFF;
+    background-color: #555;
 }
 
 .dropdown-content {
@@ -94,7 +94,6 @@ nav ul li a:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 
 main {
     display: flex;
