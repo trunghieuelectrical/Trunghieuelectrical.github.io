@@ -3,40 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu doanh nghiệp</title>
+    <title>Trang chủ</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>CÔNG TY TNHH TM CƠ ĐIỆN TRUNG HIẾU</h1>
+        <div class="header-content">
+            <div class="logo">
+                <img src="logo.png" alt="Logo công ty">
+            </div>
+            <div class="company-name">
+                <h1>Tên Công Ty</h1>
+            </div>
+            <div class="company-image">
+                <img src="company-image.jpg" alt="Ảnh công ty">
+            </div>
         </div>
         <nav>
             <ul>
+                <li><a href="#home">Trang chủ</a></li>
                 <li><a href="#about">Giới thiệu</a></li>
-                <li><a href="#services">Dịch vụ</a></li>
+                <li><a href="#news">Tin tức</a></li>
+                <li><a href="#activities">Hoạt động</a></li>
+                <li><a href="#projects">Dự án đã thực hiện</a></li>
+                <li><a href="#partners">Đối tác và khách hàng</a></li>
+                <li><a href="#documents">Văn bản</a></li>
                 <li><a href="#contact">Liên hệ</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="about">
-            <h2>Về chúng tôi</h2>
-            <p>Đoạn văn giới thiệu về doanh nghiệp của bạn.</p>
-        </section>
-        <section id="services">
-            <h2>Dịch vụ của chúng tôi</h2>
-            <p>Mô tả các dịch vụ mà doanh nghiệp của bạn cung cấp.</p>
-        </section>
-        <section id="contact">
-            <h2>Liên hệ</h2>
-            <p> Địa chỉ: Số 60, tổ 2, khu 7b, Cẩm thịnh, Cẩm phả, Quảng ninh
-                Điện thoại: 0916536555.</p>
-        </section>
+        <div class="main-content">
+            <div class="left-column">
+                <h2>Nội dung chính</h2>
+                <!-- Đây là phần nội dung chính bên trái -->
+            </div>
+            <div class="right-column">
+                <div class="shortcut-box">
+                    <h3>Lối tắt</h3>
+                    <ul>
+                        <li><a href="#shortcut1">Lối tắt 1</a></li>
+                        <li><a href="#shortcut2">Lối tắt 2</a></li>
+                        <li><a href="#shortcut3">Lối tắt 3</a></li>
+                        <li><a href="#shortcut4">Lối tắt 4</a></li>
+                        <li><a href="#shortcut5">Lối tắt 5</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2024 Tên Doanh Nghiệp</p>
+        <p>&copy; 2024 Tên Công Ty. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
