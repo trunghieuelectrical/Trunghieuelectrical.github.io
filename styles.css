@@ -22,20 +22,24 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.logo img {
-    width: 50px; /* Tuỳ chỉnh kích thước logo */
+    padding: 1em;
+    background-color: #4CAF50;
+    color: white;
 }
 
 .company-details {
     display: flex;
     align-items: center;
+    justify-content: center; /* Để căn giữa theo chiều ngang */
+    flex-grow: 1; /* Để mở rộng toàn bộ không gian còn lại */
 }
 
 .company-name {
-    margin: 0 auto; /* Căn giữa theo chiều ngang */
-    text-align: center; /* Căn giữa theo chiều ngang (phù hợp với phần nội dung) */
+    margin: 0; /* Xóa margin mặc định */
+    text-align: center; /* Để căn giữa tên công ty */
+}
+
+.company-name h1 {
     font-size: 1.2em; /* Kích thước font của tên công ty */
 }
 
@@ -43,7 +47,6 @@ header {
     width: 100px; /* Tuỳ chỉnh kích thước ảnh công ty */
     border-radius: 50%; /* Làm tròn ảnh */
 }
-
 nav {
     background-color: # 008B00;
     color: white;
