@@ -15,7 +15,7 @@ body {
 header {
     background-color: # 4876FF;
     color: white;
-    padding: 1em;
+    padding: 1.5em;
 }
 
 .company-info {
@@ -40,7 +40,7 @@ header {
 }
 
 .company-name h1 {
-    font-size: 1.2em; /* Kích thước font của tên công ty */
+    font-size: 1.5em; /* Kích thước font của tên công ty */
 }
 
 .company-image img {
