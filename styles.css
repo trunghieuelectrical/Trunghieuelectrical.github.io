@@ -18,7 +18,7 @@ header {
     padding: 1em;
 }
 
-.header-content {
+.company-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
