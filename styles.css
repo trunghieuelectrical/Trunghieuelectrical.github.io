@@ -34,7 +34,7 @@ header {
 }
 
 .company-name {
-    margin-right: auto; /* Dịch chuyển sang phải */
+    margin-right: center; /* ở giữa */
     font-size: 1.5em; /* Kích thước font của tên công ty */
 }
 
