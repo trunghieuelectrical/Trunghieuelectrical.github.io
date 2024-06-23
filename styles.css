@@ -34,7 +34,8 @@ header {
 }
 
 .company-name {
-    margin-right: center; /* ở giữa */
+    margin: 0 auto; /* Căn giữa theo chiều ngang */
+    text-align: center; /* Căn giữa theo chiều ngang (phù hợp với phần nội dung) */
     font-size: 1.5em; /* Kích thước font của tên công ty */
 }
 
