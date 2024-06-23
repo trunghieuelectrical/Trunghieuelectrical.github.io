@@ -16,20 +16,25 @@ header {
     background-color: #4CAF50;
     color: white;
     padding: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
 }
 
 .logo img {
     width: 50px; /* Tuỳ chỉnh kích thước logo */
+}
+
+.company-details {
+    display: flex;
+    align-items: center;
+}
+
+.company-name {
+    margin-right: auto; /* Dịch chuyển sang phải */
 }
 
 .company-name h1 {
@@ -44,6 +49,7 @@ header {
 
 nav {
     background-color: #333;
+    color: white;
     padding: 0.5em 0;
 }
 
