@@ -32,138 +32,30 @@ header {
     width: 100px;
 }
 
+.company-name {
+    flex: 1;
+    text-align: center;
+}
+
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
+nav ul li {
+    position: relative;
+}
+
 nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
-    transition: background-color 0.3s ease;
+    display: block;
 }
 
 nav ul li a:hover {
     background-color: #555;
-}
-
-/* Slider styles */
-.slider {
-    position: relative;
-    max-width: 100%;
-    margin: 20px auto;
-    overflow: hidden;
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.slide img {
-    width: 100%;
-    display: block;
-}
-
-/* About section styles */
-.about {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-}
-
-.about h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Projects section styles */
-.projects {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-}
-
-.projects h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.project-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.project {
-    background-color: #f9f9f9;
-    padding: 10px;
-    text-align: center;
-    flex: 1;
-}
-
-.project img {
-    width: 100%;
-    height: auto;
-}
-
-/* News section styles */
-.news {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-}
-
-.news h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.news-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.news-item {
-    background-color: #f9f9f9;
-    padding: 10px;
-    text-align: center;
-    flex: 1;
-}
-
-.news-item img {
-    width: 100%;
-    height: auto;
-}
-
-.news-item h3 {
-    margin: 10px 0;
-}
-
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-/* Dropdown menu styles */
-nav ul li {
-    position: relative;
 }
 
 .dropdown-content {
@@ -193,4 +85,47 @@ nav ul li {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* Slider styles */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+}
+
+.slide {
+    min-width: 100%;
+    transition: 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* About section */
+.about, .projects, .news {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
