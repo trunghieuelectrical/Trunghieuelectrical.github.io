@@ -1,6 +1,14 @@
-// script.js
+// JavaScript cho slider
+let slideIndex = 0;
+showSlides();
 
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Trang web đã được tải!');
-    // Thêm mã JavaScript tại đây nếu cần
-});
+function showSlides() {
+    let slides = document.querySelectorAll(".slide");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex - 1].style.display = "block";  
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
