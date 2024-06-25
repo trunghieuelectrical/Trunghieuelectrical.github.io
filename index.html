@@ -3,68 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ - Tên Công Ty</title>
+    <title>REE Corporation</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="company-info">
+        <div class="header-container">
             <div class="logo">
-                <img src="logo.png" alt="Logo công ty">
+                <img src="images/logo.png" alt="Logo công ty">
             </div>
-            <div class="company-details">
-                <div class="company-name">
-                    <h1>Tên Công Ty</h1>
-                </div>
-                <div class="company-image">
-                    <img src="company-image.jpg" alt="Ảnh công ty">
-                </div>
-            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Trang chủ</a></li>
+                    <li><a href="#about">Giới thiệu</a></li>
+                    <li><a href="#projects">Dự án</a></li>
+                    <li><a href="#news">Tin tức</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Trang chủ</a></li>
-                <li class="dropdown">
-                    <a href="#about">Giới thiệu</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#history">Lịch sử công ty</a></li>
-                        <li><a href="#organization">Mô hình tổ chức</a></li>
-                        <li><a href="#mission">Chính sách mục tiêu</a></li>
-                        <li><a href="#quality">Chứng chỉ chất lượng</a></li>
-                    </ul>
-                </li>
-                <li><a href="#news">Tin tức</a></li>
-                <li><a href="#activities">Hoạt động</a></li>
-                <li><a href="#projects">Dự án đã thực hiện</a></li>
-                <li><a href="#partners">Đối tác và khách hàng</a></li>
-                <li><a href="#documents">Văn bản</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
-        <div class="main-content">
-            <div class="left-column">
-                <h2>Nội dung chính</h2>
-                <p>Đây là phần nội dung chính bên trái...</p>
-                <!-- Nội dung chi tiết thêm vào đây -->
+    <section class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="images/slider1.jpg" alt="Slider 1">
             </div>
-            <div class="right-column">
-                <div class="shortcut-box">
-                    <h3>Lối tắt</h3>
-                    <ul>
-                        <li><a href="#shortcut1">Lối tắt 1</a></li>
-                        <li><a href="#shortcut2">Lối tắt 2</a></li>
-                        <li><a href="#shortcut3">Lối tắt 3</a></li>
-                        <li><a href="#shortcut4">Lối tắt 4</a></li>
-                        <li><a href="#shortcut5">Lối tắt 5</a></li>
-                    </ul>
-                </div>
+            <div class="slide">
+                <img src="images/slider2.jpg" alt="Slider 2">
+            </div>
+            <div class="slide">
+                <img src="images/slider3.jpg" alt="Slider 3">
             </div>
         </div>
-    </main>
+    </section>
+    <section id="about" class="about">
+        <h2>Giới thiệu</h2>
+        <p>Thông tin về công ty...</p>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Dự án nổi bật</h2>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/project1.jpg" alt="Project 1">
+                <h3>Dự án 1</h3>
+            </div>
+            <div class="project">
+                <img src="images/project2.jpg" alt="Project 2">
+                <h3>Dự án 2</h3>
+            </div>
+            <div class="project">
+                <img src="images/project3.jpg" alt="Project 3">
+                <h3>Dự án 3</h3>
+            </div>
+        </div>
+    </section>
+    <section id="news" class="news">
+        <h2>Tin tức</h2>
+        <div class="news-list">
+            <div class="news-item">
+                <img src="images/news1.jpg" alt="News 1">
+                <h3>Tin tức 1</h3>
+                <p>Mô tả ngắn gọn về tin tức 1...</p>
+            </div>
+            <div class="news-item">
+                <img src="images/news1.jpg" alt="News 2">
+                <h3>Tin tức 2</h3>
+                <p>Mô tả ngắn gọn về tin tức 2...</p>
+            </div>
+            <div class="news-item">
+                <img src="images/news1.jpg" alt="News 3">
+                <h3>Tin tức 3</h3>
+                <p>Mô tả ngắn gọn về tin tức 3...</p>
+            </div>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2024 Tên Công Ty. All rights reserved.</p>
+        <p>&copy; 2024 REE Corporation. All rights reserved.</p>
     </footer>
 </body>
 </html>
