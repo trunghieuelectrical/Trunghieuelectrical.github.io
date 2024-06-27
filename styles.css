@@ -26,8 +26,10 @@ body {
 
 /* Header styles */
 header {
-    background-color: #178774;
-    color: white;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Màu nền trắng với độ trong suốt 80% */
     padding: 10px 0;
 }
 
