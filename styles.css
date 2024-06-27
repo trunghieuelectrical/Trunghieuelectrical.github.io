@@ -116,6 +116,7 @@ nav ul li a:hover {
     display: flex;
     transition: opacity 1s ease-in-out; /* Smooth fade effect */
     position: relative;
+    height: 100%; /* Ensure slides take full height */
 }
 
 .slide {
