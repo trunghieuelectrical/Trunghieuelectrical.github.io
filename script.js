@@ -1,5 +1,6 @@
 let slideIndex = 0;
 const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
 
 function showSlide(index) {
     slides.forEach((slide, i) => {
@@ -9,24 +10,21 @@ function showSlide(index) {
         }
     });
     slideIndex = index;
-    if (slideIndex >= slides.length) {
-        slideIndex = 0;
-    }
-    if (slideIndex < 0) {
-        slideIndex = slides.length - 1;
-    }
 }
 
 document.querySelector('.next').addEventListener('click', () => {
-    showSlide(slideIndex + 1);
+    slideIndex = (slideIndex + 1) % totalSlides;
+    showSlide(slideIndex);
 });
 
 document.querySelector('.prev').addEventListener('click', () => {
-    showSlide(slideIndex - 1);
+    slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+    showSlide(slideIndex);
 });
 
 setInterval(() => {
-    showSlide(slideIndex + 1);
+    slideIndex = (slideIndex + 1) % totalSlides;
+    showSlide(slideIndex);
 }, 3000); // Automatically switch slides every 3 seconds
 
 showSlide(slideIndex);
