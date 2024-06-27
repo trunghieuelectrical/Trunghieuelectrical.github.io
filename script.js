@@ -1,14 +1,29 @@
 // JavaScript cho slider
 let slideIndex = 0;
-showSlides();
+const slides = document.querySelectorAll('.slide');
 
-function showSlides() {
-    let slides = document.querySelectorAll(".slide");
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+function showSlide(index) {
+    slideIndex = index;
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex - 1].style.display = "block";  
-    setTimeout(showSlides, 5000); // Change image every 5 seconds
+    if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
+    }
+    const offset = -slideIndex * 100;
+    document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
 }
+
+document.querySelector('.next').addEventListener('click', () => {
+    showSlide(slideIndex + 1);
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+    showSlide(slideIndex - 1);
+});
+
+setInterval(() => {
+    showSlide(slideIndex + 1);
+}, 3000); // Tự động chuyển slide sau mỗi 3 giây
+
+showSlide(slideIndex);
