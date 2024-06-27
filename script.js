@@ -2,6 +2,12 @@ let slideIndex = 0;
 const slides = document.querySelectorAll('.slide');
 
 function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) {
+            slide.classList.add('active');
+        }
+    });
     slideIndex = index;
     if (slideIndex >= slides.length) {
         slideIndex = 0;
@@ -9,8 +15,6 @@ function showSlide(index) {
     if (slideIndex < 0) {
         slideIndex = slides.length - 1;
     }
-    const offset = -slideIndex * 100;
-    document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
 }
 
 document.querySelector('.next').addEventListener('click', () => {
@@ -23,6 +27,6 @@ document.querySelector('.prev').addEventListener('click', () => {
 
 setInterval(() => {
     showSlide(slideIndex + 1);
-}, 3000); // Tự động chuyển slide sau mỗi 3 giây
+}, 3000); // Automatically switch slides every 3 seconds
 
 showSlide(slideIndex);
